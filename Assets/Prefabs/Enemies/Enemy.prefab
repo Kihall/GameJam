@@ -48,8 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d79cdec87615f547bb56e88ea012f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackTimerMax: 2
   patrolSpeed: 3
   aIDamage: 10
+  aggroDistance: 5
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
