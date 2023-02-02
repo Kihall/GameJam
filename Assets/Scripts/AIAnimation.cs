@@ -8,9 +8,11 @@ public class AIAnimation : MonoBehaviour
     [SerializeField] private AIController aiController;
 
     private Animator animator;
+    private AudioSource audioSource;
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
 
@@ -61,5 +63,7 @@ public class AIAnimation : MonoBehaviour
         animator.SetBool("death", true);
         aiController.GetComponent<BoxCollider2D>().enabled = false;
         aiController.GetComponent<Rigidbody2D>().gravityScale = 0;
+
+        audioSource.Play();
     }
 }

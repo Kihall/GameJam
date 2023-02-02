@@ -265,9 +265,17 @@ public class PlayerController : MonoBehaviour
         climbTimer = climbTimerMax;
     }
 
+    public float GetDashTimer()
+    {
+        return dashTimer;
+    }
     public float GetClimbTimer()
     {
         return climbTimer;
+    }
+    public float GetDoubleJumpTimer()
+    {
+        return doubleJumpTimer;
     }
 
     public Vector3 GetMoveDir()

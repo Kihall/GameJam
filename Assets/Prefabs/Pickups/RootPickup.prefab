@@ -75,5 +75,8 @@ MonoBehaviour:
   isDoubleJump: 0
   isClimb: 0
   isRestoreHealth: 0
+  doubleJumpTimer: 5
+  dashTimer: 5
+  climbTimer: 5
   healAmount: 100
   respawnTime: 5
